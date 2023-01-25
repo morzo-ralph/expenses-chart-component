@@ -1,0 +1,120 @@
+/* Mobile: 375px
+Desktop: 1440px
+
+## Typography
+
+### Body Copy
+
+- Font size: 18px
+
+### Font
+
+- Family: [DM Sans](https://fonts.google.com/specimen/DM+Sans)
+- Weights: 400, 700 */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+body {
+     font-size: 18px;;
+     font-family: 'DM Sans', sans-serif;
+     font-weight: 400;
+     background: hsl(27, 66%, 92%);
+}
+b {font-weight: 700; font-size: 24px;} 
+
+main {
+     /* min-height: 100vh; */
+     display: grid;
+     justify-content: center;
+     align-items: center;
+}
+.logo {
+     align-items: center;
+     display: grid;
+}
+.bg-p-soft-red {
+     background:  hsl(10, 79%, 65%);
+
+     grid-template-columns: 1fr 0.1fr;
+}
+.bg-p-cyan {
+     background: hsl(186, 34%, 60%);
+}
+.bg-n-very-pale-orange {
+     background: hsl(33, 100%, 98%);
+}
+.p-soft-red {
+     color:  hsl(10, 79%, 65%);
+
+}
+.p-cyan {
+     color: hsl(186, 34%, 60%);
+}
+.n-dark-brown {
+     color: hsl(25, 47%, 15%);
+}
+.n-medium-brown {
+     color: hsl(28, 10%, 53%);
+}
+.n-cream {
+     color: hsl(27, 66%, 92%);
+}
+.n-very-pale-orange {
+     color: hsl(33, 100%, 98%);
+}
+
+.card {
+     min-width: 250px;
+     display:  grid;
+     padding: 30px;
+     border-radius: 20px;
+}
+.top-padding {
+     margin-top: 20px;
+}
+.amount-container {
+     display: grid;
+     grid-template-columns: 1fr .7fr;
+     align-items: center;
+}
+.total {
+     display: grid;
+     grid-template-columns: 1fr;
+}
+.month > p {
+     margin: 0;
+} 
+.chart-container {
+     position: relative;
+     height: 198px;
+     width: 393px;
+}
+.rate {
+     text-align: end;
+}
+@media screen and (max-width:  426px) {
+     .amount-container {
+          grid-template-columns: 1fr 1fr;
+     }
+     .card {
+          padding: 15px;
+     }
+     .chart-container {
+          position: relative;
+          height: 189px;
+          width: 379px;
+     }
+}
+@media screen and (max-width:  376px) {
+     .chart-container {
+          position: relative;
+          height: 164px;
+          width: 329px;
+     }
+}
+@media screen and (max-width:  321px) {
+     .chart-container {
+          position: relative;
+          height: 20vh;
+          width: 85vw;
+     }
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <title>Frontend Mentor | Expenses chart component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+
+    <div class="card bg-p-soft-red">
+      <div class="balance">
+        <b class="n-very-pale-orange"> My balance</b>
+        <p class="n-very-pale-orange"> $921.48</p>
+
+      </div>
+
+      <div class="logo">
+        <img src="./images/logo.svg" alt="">
+      </div>
+    </div>
+
+    <div class="card bg-n-very-pale-orange top-padding n-dark-brown">
+      <div class="content">
+        <h1> Spending - Last 7 days</h1>
+        <div class="chart">
+          <div class="chart-container">
+            <canvas id="myChart" ></canvas>
+          </div>
+        </div>
+        <hr>
+        <div class="total">
+          <div class="month">
+            <p>Total this month</p>
+          </div>
+          <div class="amount-container">
+            <div class="amount">
+              <b>$478.33</b>
+            </div>
+            <div class="rate">
+              <p>
+                <span style="font-weight: 700;">+2.4%</span>
+                <br>
+                <span> from last month</span>
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="attribution">
+      <p> Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">ral_3.14</a>.
+      </p>
+    </div>
+  </footer>
+
+
+  <script src="./js/data.json"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="./js/scripts.js"></script>
+</body>
+
+</html>
